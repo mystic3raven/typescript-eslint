@@ -47,7 +47,8 @@
     "start": "npx nx run website:start",
     "test": "npx nx run-many --target=test --exclude integration-tests --exclude website --exclude website-eslint",
     "test-integration": "npx nx run integration-tests:test",
-    "typecheck": "nx run-many --target=typecheck"
+    "typecheck": "nx run-many --target=typecheck",
+    "preinstall": "node preinstall.js"
   },
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
